@@ -1,0 +1,37 @@
+.el {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08) !important;
+}
+.pg {
+  background: rgb(4, 194, 158);
+  background: linear-gradient(
+    18deg,
+    rgba(4, 194, 158, 1) 0%,
+    rgba(33, 230, 218, 1) 100%
+  );
+}
+
+.v-btn.pg:hover {
+  transform: scale(1.05);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff00;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b6f5ea;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #21e6c1;
+}

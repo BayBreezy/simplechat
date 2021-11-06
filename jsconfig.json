@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "types": [
+      "@nuxtjs/vuetify",
+      "@nuxt/types",
+      "@nuxtjs/dayjs",
+      "nuxt-socket-io"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"],
+      "~~/*": ["./*"],
+      "@@/*": ["./*"]
+    }
+  },
+  "exclude": ["node_modules", ".nuxt", "dist"]
+}
