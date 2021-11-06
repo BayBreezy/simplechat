@@ -13,6 +13,8 @@
 
 > Hobby project created using Nuxtjs + Socket.io + Nuxt Socket Io. Use it to chat with a friend
 
+![Home Screen Image](https://github.com/BayBreezy/simplechat/blob/master/static/image.PNG)
+
 ### 🏠 [Homepage](https://github.com/BayBreezy/simplechat)
 
 ### ✨ [Demo](https://simplechatappb.herokuapp.com/)
