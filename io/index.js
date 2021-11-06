@@ -12,7 +12,7 @@ export default function () {
     console.log(`Host is ${host}, Port is ${port}`);
     this.nuxt.server.listen = async () =>
       new Promise((resolve) =>
-        server.listen(port || 3000, host || "localhost", resolve)
+        server.listen(process.env.PORT || 3000, host || "localhost", resolve)
       );
     // close this server on 'close' event
     this.nuxt.hook("close", () => new Promise(server.close));
