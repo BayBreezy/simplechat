@@ -7,7 +7,7 @@
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
   <a href="https://twitter.com/iAm\_BayBreezy" target="_blank">
-    <img alt="Twitter: iAm\_BayBreezy" src="https://img.shields.io/twitter/follow/iAm\_BayBreezy.svg?style=social" />
+    <img alt="Twitter: iAm\_BayBreezy" src="https://img.shields.io/twitter/follow/iAm_BayBreezy.svg?style=social" />
   </a>
 </p>
 
