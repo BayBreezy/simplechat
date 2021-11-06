@@ -86,6 +86,9 @@ export default {
     };
   },
   methods: {
+    /**
+     * Method used to create a room
+     */
     async CreateRoom() {
       if (!this.username)
         return this.$errorText({ message: "Username Required." });
@@ -97,6 +100,9 @@ export default {
       // redirect to room
       this.$router.push("/room/" + roomId);
     },
+    /**
+     * Method used to join a room that already exists
+     */
     async JoinRoom() {
       if (!this.username || !this.roomId)
         return this.$errorText({ message: "Username & Room ID Required." });

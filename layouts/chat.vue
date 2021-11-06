@@ -35,6 +35,9 @@
       <v-btn @click="switchTheme" icon>
         <v-icon>mdi-brightness-6</v-icon>
       </v-btn>
+      <v-btn @click="logout" icon>
+        <v-icon>mdi-logout</v-icon>
+      </v-btn>
     </v-app-bar>
     <v-navigation-drawer :disable-resize-watcher="true" v-model="drawer" app>
       <v-list nav>
@@ -71,9 +74,15 @@ export default {
     };
   },
   methods: {
+    /**
+     * Method used to switch betwen light and dark theme
+     */
     switchTheme() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
     },
+    /**
+     * Share method.. More for mobile devices
+     */
     async share() {
       let sharedata = {
         title: "Let's have a quick chat",
@@ -86,6 +95,17 @@ export default {
         console.log(error);
       }
     },
+    /**
+     * Method used to clear localstorage
+     */
+    async logout() {
+      localStorage.removeItem("username");
+      localStorage.removeItem("roomId");
+      await this.$router.push("/");
+    },
+    /**
+     * Method used to copy room id for sharing
+     */
     copyId() {
       let ct = document.querySelector("#roominput");
       ct.setAttribute("type", "text");

@@ -61,7 +61,14 @@
 export default {
   layout: "chat",
   mounted() {
+    /**
+     * Instantiate WS connection with nuxt-socket-io
+     */
     this.socket = this.$nuxtSocket({ name: "home" });
+
+    /**
+     * Get user credential from localstorage
+     */
     const username = localStorage.getItem("username");
     const roomId = localStorage.getItem("roomId");
 
@@ -71,6 +78,7 @@ export default {
     }
     this.username = username;
 
+    // Socket events that we want to listent o on this page
     this.socket.emit("join", { username, roomId });
     this.socket.on("init-messages", (msgs) => {
       this.messages = msgs;
@@ -98,12 +106,18 @@ export default {
     };
   },
   methods: {
+    /**
+     * Method used to scroll to end of page/messages
+     */
     scrollBot() {
       setTimeout(() => {
         let c = document.getElementById("cont");
         this.$vuetify.goTo(c.scrollHeight, { duration: 500 });
       }, 250);
     },
+    /**
+     * Method used to send messages
+     */
     sendMessage() {
       if (!this.newMessage.trim()) return;
 

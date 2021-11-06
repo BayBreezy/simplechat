@@ -38,13 +38,18 @@ export default {
     "@nuxtjs/axios",
     // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
+    // https://github.com/Developmint/nuxt-webfontloader#readme
     "nuxt-webfontloader",
+    // https://www.npmjs.com/package/@nuxtjs/dayjs
     "@nuxtjs/dayjs",
+    // https://ngrok.nuxtjs.org/
     "@nuxtjs/ngrok",
+    // https://nuxt-socket-io.netlify.app/
     "nuxt-socket-io",
+    // https://github.com/nuxt/nuxt.js/tree/dev/examples/with-sockets
     "~/io",
   ],
-
+  // Font config
   webfontloader: {
     google: {
       families: ["Montserrat:wght@100;200;300;400;500;600;700&display=swap"],
@@ -121,6 +126,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+  // Env
   env: {
     WS_URL: process.env.WS_URL,
   },
