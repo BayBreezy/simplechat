@@ -11,11 +11,11 @@
   </a>
 </p>
 
-> hobby project created using Nuxtjs + Socket.io + Nuxt Socket Io. use it to chat with a friend
+> Hobby project created using Nuxtjs + Socket.io + Nuxt Socket Io. Use it to chat with a friend
 
 ### 🏠 [Homepage](https://github.com/BayBreezy/simplechat)
 
-### ✨ [Demo](https://behonbaker.com)
+### ✨ [Demo](https://simplechatappb.herokuapp.com/)
 
 ## Install
 
@@ -26,7 +26,7 @@ npm install
 ## Usage
 
 ```sh
-npm run start
+npm run build && npm run start
 ```
 
 ## Run tests
@@ -39,14 +39,15 @@ npm run test
 
 👤 **Behon Baker**
 
-* Website: https://behonbaker.com
-* Twitter: [@iAm\_BayBreezy](https://twitter.com/iAm\_BayBreezy)
-* Github: [@BayBreezy](https://github.com/BayBreezy)
-* LinkedIn: [@Behon Baker](https://linkedin.com/in/Behon Baker)
+- Website: https://behonbaker.com
+- Twitter: [@iAm_BayBreezy](https://twitter.com/iAm_BayBreezy)
+- Github: [@BayBreezy](https://github.com/BayBreezy)
+- LinkedIn: [@Behon Baker](https://linkedin.com/in/Behon Baker)
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
