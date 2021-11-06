@@ -8,7 +8,9 @@ export default function () {
     const io = socketIO(server);
 
     // overwrite nuxt.server.listen()
-    this.nuxt.server.listen = (port, host) =>
+    let { host, port } = this.nuxt.options.server;
+    console.log(`Host is ${host}, Port is ${port}`);
+    this.nuxt.server.listen = async () =>
       new Promise((resolve) =>
         server.listen(port || 3000, host || "localhost", resolve)
       );
